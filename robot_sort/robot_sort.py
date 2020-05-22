@@ -96,8 +96,26 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
-        # Fill this out
-        pass
+        #implement Bubble sort
+        #don't need to store variables
+        #use the light ON/OFF as a flag to track swaps
+        #start with light On
+        #while light is ON
+            #light = OFF
+            #loop through the list:
+                #if that number is greater than the one in the right
+                    #SWAP
+                    #light = ON
+        #return self._list
+
+        self.set_light_on()
+        while self.light_is_on():
+            self.set_light_off()
+            for i in range(len(l) - 1):
+                if l[i] > l[i+1]:
+                    l[i], l[i+1] = l[i+1], l[i]
+                    self.set_light_on()
+        return l
 
 
 if __name__ == "__main__":
