@@ -47,3 +47,5 @@ def egg_breaks(n):
      #else: (egg doesn't break)
           #f is somewhere above
           #we call the function again with n as m + m/2
+
+The runtime of this algorithm would be O(logn) because with each call we would throw away half of the "n" so even if it was a very big building the runtime would grow even slower.
