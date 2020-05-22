@@ -30,9 +30,9 @@ def egg_breaks(n):
 #n number of floors
 #f is the floor we know the egg breaks
 #everything above f breaks too
-
-     #Base Cases: (while number of floor is above or first)
-     #while n >= 0
+f will be the last "middle", in the last call
+#Base Cases: (while number of floor is above or first)
+#while n >= 0
 
      #throw egg from middle of building
      middle = n/2

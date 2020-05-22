@@ -109,25 +109,13 @@ class SortingRobot:
         #return self._list
 
         self.set_light_on()
-        while self._light == "ON":
+        while self.light_is_on():
             self.set_light_off()
-            for i in range(len(self._list) - 1):
-                if self._list[i] > self._list[i+1]:
-                    self._list[i], self._list[i+1] = self._list[i+1], self._list[i]
+            for i in range(len(l) - 1):
+                if l[i] > l[i+1]:
+                    l[i], l[i+1] = l[i+1], l[i]
                     self.set_light_on()
-        return self._list
-
-        """ swaps = True
-        while swaps:
-            print(arr)
-            swaps = False
-            for i in range(len(arr) - 1):
-                if arr[i] > arr[i + 1]:
-                    arr[i], arr[i + 1] = arr[i + 1], arr[i]
-                    swaps = True
-
-
-        return self._list """
+        return l
 
 
 if __name__ == "__main__":
