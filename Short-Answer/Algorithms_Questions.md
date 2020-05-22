@@ -7,26 +7,25 @@ pseudocode with respect to the input size n of each of the following:
 
 ```python
 a)  a = 0
-    while (a < n * n * n):
+    while (a < n * n * n):  #O(n^3)
       a = a + n * n
 ```
 
-
-```
+```#O(n^2)
 b)  sum = 0
-    for i in range(n):
+    for i in range(n):  #O(n)
       j = 1
-      while j < n:
+      while j < n:      #O(n)
         j *= 2
         sum += 1
 ```
 
-```
+```O(n)
 c)  def bunnyEars(bunnies):
-      if bunnies == 0:
+      if bunnies == 0:  #O(1)
         return 0
 
-      return 2 + bunnyEars(bunnies-1)
+      return 2 + bunnyEars(bunnies-1) #O(n)
 ```
 
 ## Exercise II
